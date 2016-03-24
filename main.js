@@ -27,6 +27,8 @@ app.on('window-all-closed', () => {
 
 
 app.on('ready', () => {
+  BrowserWindow.addDevToolsExtension('node_modules/remotedev-extension/dist');
+  BrowserWindow.addDevToolsExtension('tools/react-devtools/shells/chrome');
   mainWindow = new BrowserWindow({ width: 1024, height: 728 });
 
   mainWindow.loadURL(`file://${__dirname}/app/app.html`);

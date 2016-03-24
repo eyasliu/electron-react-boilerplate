@@ -1,8 +1,7 @@
-import React from 'react';
 import { Route, IndexRoute } from 'react-router';
-import App from './containers/App';
-import HomePage from './containers/HomePage';
-import CounterPage from './containers/CounterPage';
+import App from 'fw';
+import HomePage from 'home';
+import CounterPage from 'home/components/CounterPage';
 
 
 export default (

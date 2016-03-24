@@ -1,7 +1,20 @@
-import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
 import styles from './Counter.css';
+import Counter from '../components/Counter';
+import * as CounterActions from '../actions/counter';
 
+function mapStateToProps(state) {
+  return {
+    counter: state.counter
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(CounterActions, dispatch);
+}
+
+
+@connect(mapStateToProps, mapDispatchToProps);
 class Counter extends Component {
   static propTypes = {
     increment: PropTypes.func.isRequired,

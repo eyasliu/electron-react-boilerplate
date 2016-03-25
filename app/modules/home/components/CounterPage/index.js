@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import styles from './Counter.css';
-import Counter from '../components/Counter';
-import * as CounterActions from '../actions/counter';
+// import Counter from '../components/Counter';
+import * as CounterActions from '../../actions/counter';
 
 function mapStateToProps(state) {
   return {

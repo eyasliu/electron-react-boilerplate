@@ -1,12 +1,12 @@
-import { Route, IndexRoute } from 'react-router';
+import { Route, IndexRedirect } from 'react-router';
 import App from 'fw';
 import HomePage from 'home';
-import CounterPage from 'home/components/CounterPage';
+import HomeRoutes from 'home/routes';
 
 
 export default (
   <Route path="/" component={App}>
-    <IndexRoute component={HomePage} />
-    <Route path="/counter" component={CounterPage} />
+    <IndexRedirect to="/home" />
+    {HomeRoutes}
   </Route>
 );

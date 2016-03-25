@@ -5,7 +5,7 @@ import createLogger from 'redux-logger';
 import devTools from 'remote-redux-devtools';
 import { hashHistory } from 'react-router';
 import { routerMiddleware } from 'react-router-redux';
-import rootReducer from '../reducers';
+import rootReducer from 'fw/reducers';
 
 const logger = createLogger({
   level: 'info',
@@ -28,8 +28,8 @@ export default function configureStore(initialState) {
   const store = createStore(rootReducer, initialState, enhancer);
 
   if (module.hot) {
-    module.hot.accept('../reducers', () =>
-      store.replaceReducer(require('../reducers'))
+    module.hot.accept('fw/reducers', () =>
+      store.replaceReducer(require('fw/reducers'))
     );
   }
 

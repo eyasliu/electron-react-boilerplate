@@ -9,7 +9,8 @@ const alias = {
   modules: path.join(__dirname, 'app/modules'),
   utils: path.join(__dirname, 'app/utils'),
   fw: path.join(__dirname, 'app/modules/framework'),
-  blog: path.join(__dirname, 'app/modules/blog')
+  blog: path.join(__dirname, 'app/modules/blog'),
+  home: path.join(__dirname, 'app/modules/home'),
 }
 
 module.exports = {

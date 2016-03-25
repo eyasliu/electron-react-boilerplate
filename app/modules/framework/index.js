@@ -1,9 +1,6 @@
 import APPModule from './components/APPModule';
 
-export default class App extends Component {
-  static propTypes = {
-    children: PropTypes.element.isRequired
-  };
+export default class FrameWork extends Component {
 
   render() {
     return (

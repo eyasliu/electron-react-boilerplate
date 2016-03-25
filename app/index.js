@@ -1,4 +1,4 @@
-import React from 'react';
+import 'utils/globals';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, hashHistory } from 'react-router';
